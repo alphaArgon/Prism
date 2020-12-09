@@ -1,0 +1,148 @@
+{
+  "images" : [
+    {
+      "filename" : "SidebarDocklight.light.small.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "SidebarDocklight.light.small@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "SidebarDock.light.medium.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "18x18"
+    },
+    {
+      "filename" : "SidebarDock.light.medium@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "18x18"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "24x24"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "24x24"
+    },
+    {
+      "filename" : "SidebarDock.light.large.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "32x32"
+    },
+    {
+      "filename" : "SidebarDock.light.large@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "32x32"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SidebarDock.dark.small.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SidebarDock.dark.small@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "16x16"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SidebarDock.dark.medium.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "18x18"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SidebarDock.dark.medium@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "18x18"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "24x24"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "24x24"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SidebarDock.dark.large.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "32x32"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SidebarDock.dark.large@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "32x32"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

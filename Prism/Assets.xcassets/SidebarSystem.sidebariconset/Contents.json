@@ -1,0 +1,54 @@
+{
+  "images" : [
+    {
+      "filename" : "SidebarSystem.small.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "SidebarSystem.small@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "SidebarSystem.medium.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "18x18"
+    },
+    {
+      "filename" : "SidebarSystem.medium@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "18x18"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "24x24"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "24x24"
+    },
+    {
+      "filename" : "SidebarSystem.large.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "32x32"
+    },
+    {
+      "filename" : "SidebarSystem.large@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "32x32"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
