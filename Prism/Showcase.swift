@@ -104,15 +104,16 @@ class ShowcaseViewController: NSViewController, NSTableViewDelegate, NSTableView
     func menuWillOpen(_ menu: NSMenu) {
         if tableView.clickedRow < 0 {
             clickedIndex = nil;
-                if menuItemsAreEnabled {
+            if menuItemsAreEnabled {
+                menuItemsAreEnabled = false;
                 menu.items.forEach {item in
                     item.isEnabled = false;
                 }
             }
-        }
-        if tableView.clickedRow >= 0 {
+        } else {
             clickedIndex = tableView.clickedRow;
             if !menuItemsAreEnabled {
+                menuItemsAreEnabled = true;
                 menu.items.forEach {item in
                     item.isEnabled = true;
                 }
