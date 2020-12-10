@@ -90,7 +90,7 @@ class Application {
         
         return (
             applications: founded.sorted {
-                $0.name < $1.name;
+                $0.displayName.compare($1.displayName, options: .caseInsensitive, range: nil, locale: .current) == .orderedAscending
             },
             identifiers: identifiers
         );

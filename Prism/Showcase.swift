@@ -22,6 +22,7 @@ class ShowcaseViewController: NSViewController, NSTableViewDelegate, NSTableView
         scrollView.drawsBackground = false;
         scrollView.hasHorizontalScroller = false;
         scrollView.hasVerticalScroller = true;
+        scrollView.autohidesScrollers = true;
         scrollView.autoresizingMask = [.height, .width];
         
         scrollView.documentView = tableView;

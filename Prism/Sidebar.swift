@@ -6,9 +6,9 @@ struct SidebarCategory {
     var type: Application.Category;
     
     typealias RootIdentifier = String;
-    static var root:RootIdentifier = "root";
+    static var root: RootIdentifier = "root";
     
-    static var descriptor: [(Application.Category, String, String, String)] = [
+    static var descriptors: [(Application.Category, String, String, String)] = [
         (.any, "all", "square.fill.text.grid.1x2", "SidebarApplication"),
         (.featured, "featured", "paintpalette", "SidebarRecommendation"),
         (.launchpad, "launchpad", "apps.ipad.landscape", "SidebarLaunchpad"),
@@ -26,7 +26,7 @@ class SidebarController: NSViewController, NSOutlineViewDelegate, NSOutlineViewD
     var categoryAllRowIndex = 1;
     let sidebarCategories: [SidebarCategory] = {
         var sidebarCategories = [SidebarCategory]();
-        for (category, title, symbolName, imageName) in SidebarCategory.descriptor {
+        for (category, title, symbolName, imageName) in SidebarCategory.descriptors {
             if #available(OSX 11.0, *) {
                 sidebarCategories.append(SidebarCategory(
                     title: ("category-" + title).localized,
@@ -92,6 +92,7 @@ class SidebarController: NSViewController, NSOutlineViewDelegate, NSOutlineViewD
         scrollView.drawsBackground = false;
         scrollView.hasHorizontalScroller = false;
         scrollView.hasVerticalScroller = true;
+        scrollView.autohidesScrollers = true;
         scrollView.autoresizingMask = [.height, .width];
         view.addSubview(scrollView);
         
@@ -102,7 +103,7 @@ class SidebarController: NSViewController, NSOutlineViewDelegate, NSOutlineViewD
         outlineView.headerView = nil;
         outlineView.backgroundColor = NSColor.clear;
         
-        let column = NSTableColumn(identifier: NSUserInterfaceItemIdentifier("SidebarCategorys"));
+        let column = NSTableColumn(identifier: NSUserInterfaceItemIdentifier("SidebarCategories"));
         column.width = outlineView.bounds.width;
         outlineView.addTableColumn(column);
         outlineView.rowSizeStyle = .default;
@@ -137,9 +138,9 @@ class SidebarController: NSViewController, NSOutlineViewDelegate, NSOutlineViewD
         guard item is SidebarCategory else {
             if item is SidebarCategory.RootIdentifier {
                 let header = NSTableCellView();
-                let lable = NSLabel(title: "categories".localized);
-                header.textField = lable;
-                header.addSubview(lable);
+                let label = NSLabel(title: "categories".localized);
+                header.textField = label;
+                header.addSubview(label);
                 return header;
             }
             return nil;

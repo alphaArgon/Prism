@@ -33,11 +33,11 @@ class ShowcaseCellView: NSTableCellView {
         nameLabel.sizeToFit();
         self.addSubview(nameLabel);
         
-        let domainLable = NSLabel(title: application.identifier.domain);
-        domainLable.controlSize = .small;
-        domainLable.font = NSFont.labelFont(ofSize: NSFont.smallSystemFontSize);
-        domainLable.textColor = NSColor.secondaryLabelColor;
-        self.addSubview(domainLable);
+        let domainLabel = NSLabel(title: application.identifier.domain);
+        domainLabel.controlSize = .small;
+        domainLabel.font = NSFont.labelFont(ofSize: NSFont.smallSystemFontSize);
+        domainLabel.textColor = NSColor.secondaryLabelColor;
+        self.addSubview(domainLabel);
         
         
         let cellBounds = bounds;
@@ -70,12 +70,12 @@ class ShowcaseCellView: NSTableCellView {
         );
         nameLabel.autoresizingMask = .width;
         
-        domainLable.frame = NSRect(
+        domainLabel.frame = NSRect(
             x: nameLabel.frame.minX,
-            y: cellBounds.height / 2 - NSFont.systemFontSize + NSFont.smallSystemFontSize - domainLable.fittingSize.height,
+            y: cellBounds.height / 2 - NSFont.systemFontSize + NSFont.smallSystemFontSize - domainLabel.fittingSize.height,
             width: nameLabel.frame.width,
-            height: domainLable.fittingSize.height
+            height: domainLabel.fittingSize.height
         );
-        domainLable.autoresizingMask = .width;
+        domainLabel.autoresizingMask = .width;
     }
 }
