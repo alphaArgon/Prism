@@ -9,6 +9,7 @@ Accent and selection highlight colors can be simply configured using `defaults` 
 
 Officially Apple provided `UserDefaults(suiteName: String)` Cocoa API to link to a specific application defaults database, but not accessible for one in Sandbox. Therefore, inspired by [Gray](https://github.com/zenangst/Gray), the core features are still implemented by imperative processes and command line tools.
 
-## Screenshot
+## Screenshots
 
-<img src="./images/PrismBigSur.png" title="Scheenshot of Prism in light appearance." width="721"></picture>
+<img src="./images/PrismAqua.png" title="Scheenshot of Prism in light appearance in macOS Mojave." width="721"></picture>
+<img src="./images/PrismBigSur.dark.png" title="Scheenshot of Prism in dark appearance in macOS Big Sur." width="721"></picture>
